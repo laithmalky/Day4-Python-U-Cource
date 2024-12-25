@@ -31,3 +31,16 @@ if random_coin == 1:
     print("Head")
 else:
     print("Tail")
+
+
+
+#########################################
+
+# The list
+
+list_of_fruits = ["Apple", "Tomato", "What else?", "didnt finish yet?"]
+print(list_of_fruits[2])
+
+list_of_fruits[2] = "What else ? !"
+print(list_of_fruits[2])
+
