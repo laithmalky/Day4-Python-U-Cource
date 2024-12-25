@@ -59,3 +59,4 @@ non_fruits = ["wasap", "how u doin"]
 
 the_big_list = [fruits, non_fruits]
 print(the_big_list)
+print(the_big_list[1][1]) # the first number is for which list we wanna use and the second number is for which item we want from the list we used
