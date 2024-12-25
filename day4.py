@@ -39,8 +39,13 @@ else:
 # The list
 
 list_of_fruits = ["Apple", "Tomato", "What else?", "didnt finish yet?"]
+print(list_of_fruits[2]) # for print just spicefic item from the list
+
+list_of_fruits[2] = "What else ? !" # for change any item in the list
 print(list_of_fruits[2])
 
-list_of_fruits[2] = "What else ? !"
-print(list_of_fruits[2])
+list_of_fruits.append("Hello") # to add any item to the list
+print(list_of_fruits)
 
+list_of_fruits.extend(["yo wasap", "How u doing"]) # to add list to the list
+print(list_of_fruits)
