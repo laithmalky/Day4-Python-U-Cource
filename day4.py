@@ -49,3 +49,13 @@ print(list_of_fruits)
 
 list_of_fruits.extend(["yo wasap", "How u doing"]) # to add list to the list
 print(list_of_fruits)
+
+friends = ["John", "Luna", "Rachil", "Jack", "Smith"]
+print(random.choice(friends)) # to get a random item from any list 
+
+# List on the list 
+fruits = ["hello", "welcome"]
+non_fruits = ["wasap", "how u doin"]
+
+the_big_list = [fruits, non_fruits]
+print(the_big_list)
