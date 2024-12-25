@@ -9,9 +9,12 @@ print(random_integer)
 print(my_module.MyModuleNumber) 
 
 
-# random numbers from 0.0 to 0.999 less than one 
+# random numbers from 0.0 to 0.999 less than one but never be one
 random_float = random.random()
 print(random_float)
 
 random_float_more_bigger_than_one = random.random() * 10
 print(random_float_more_bigger_than_one)
+
+random_float_range = random.uniform(1, 10) # random number could be 20 
+print(random_float_range)
