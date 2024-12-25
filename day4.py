@@ -18,3 +18,16 @@ print(random_float_more_bigger_than_one)
 
 random_float_range = random.uniform(1, 10) # random number could be 20 
 print(random_float_range)
+
+
+########################################################################
+
+# small task to get random face for a coin
+
+random_coin = random.randint(1,2)
+print(random_coin)
+
+if random_coin == 1:
+    print("Head")
+else:
+    print("Tail")
