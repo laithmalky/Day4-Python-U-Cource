@@ -48,7 +48,8 @@ computer_number = random.randint(0,2)
 #     print("Please pick the right number losser!")
 
 # check = user < 0 or user > 2
-if 0 <= user <=2:
+check = 0 <= user <=2
+if check == True:
     print(hands_list[user])
     print(f"Computer:\n{hands_list[computer_number]}")
 else:
@@ -61,17 +62,23 @@ else:
 # if computer_number == 2:
 #     print(Scissors)
 
-if user == computer_number:
+if check == False:
+    check = False
+elif user == computer_number:
     print("Its draw")
 elif user == 2 and computer_number == 0 : 
     print("You Loose!")
 elif user == 0 and computer_number == 2 : 
     print("You win!")
-elif user == 1 and computer_number == 0 : 
+elif user > computer_number:
     print("You win!")
-elif user == 0 and computer_number == 1 : 
+elif computer_number > user:
     print("You Loose!")
-elif user == 2 and computer_number == 1 : 
-    print("You win!")
-elif user == 1 and computer_number == 2 : 
-    print("You Loose!")
+# elif user == 1 and computer_number == 0 : 
+#     print("You win!")
+# elif user == 0 and computer_number == 1 : 
+#     print("You Loose!")
+# elif user == 2 and computer_number == 1 : 
+#     print("You win!")
+# elif user == 1 and computer_number == 2 : 
+#     print("You Loose!")
