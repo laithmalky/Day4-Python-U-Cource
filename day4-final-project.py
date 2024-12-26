@@ -47,12 +47,12 @@ computer_number = random.randint(0,2)
 # else:
 #     print("Please pick the right number losser!")
 
-check = user < 0 or user > 2
-if check == True:
-    print("Please pick the right number losser!")
-else:
+# check = user < 0 or user > 2
+if 0 <= user <=2:
     print(hands_list[user])
     print(f"Computer:\n{hands_list[computer_number]}")
+else:
+    print("Please pick the right number losser!")
 
 # if computer_number == 0:
 #     print(rock)
