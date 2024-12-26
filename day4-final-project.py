@@ -33,28 +33,33 @@ Scissors
 
 import random
 
+hands_list = [rock, paper, Scissors]
 user = int(input("Lets play! so press 0 for Rock, press 1 for Paper or press 2 for Scissors \n"))
 
 computer_number = random.randint(0,2)
 
-if user == 0:
-    print(rock)
-elif user == 1:
-    print(paper)
-elif user == 2:
-    print(Scissors)
-else:
+# if user == 0:
+#     print(rock)
+# elif user == 1:
+#     print(paper)
+# elif user == 2:
+#     print(Scissors)
+# else:
+#     print("Please pick the right number losser!")
+
+check = user < 0 or user > 2
+if check == True:
     print("Please pick the right number losser!")
+else:
+    print(hands_list[user])
+    print(f"Computer:\n{hands_list[computer_number]}")
 
-
-print("Computer:")
-
-if computer_number == 0:
-    print(rock)
-if computer_number == 1:
-    print(paper)
-if computer_number == 2:
-    print(Scissors)
+# if computer_number == 0:
+#     print(rock)
+# if computer_number == 1:
+#     print(paper)
+# if computer_number == 2:
+#     print(Scissors)
 
 if user == computer_number:
     print("Its draw")
