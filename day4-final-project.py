@@ -70,4 +70,3 @@ elif user == 2 and computer_number == 1 :
     print("You win!")
 elif user == 1 and computer_number == 2 : 
     print("You Loose!")
-
